@@ -1,0 +1,103 @@
+@use "../../styles/variables.scss" as *;
+
+.wrapper {
+  padding: 1rem;
+  height: 100vh;
+  background: $primary-background;
+
+  .navbar {
+    margin-bottom: 1rem;
+
+    padding: 0.25rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: $primary-background;
+    color: $primary-color;
+    border: 1px dashed $secondary-color;
+    border-radius: 1rem;
+
+    .navbarList {
+      display: flex;
+      align-items: baseline;
+      list-style: none;
+
+      li {
+        margin: 0 0.5rem;
+      }
+
+      .active {
+        padding: 0.5rem 1rem;
+        background: $secondary-background;
+        border-radius: 0.75rem;
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    gap: 1rem;
+
+    .transactionCard {
+      padding: 1rem;
+      width: 70%;
+      background: $primary-background !important;
+      color: $primary-color !important;
+      border: 1px dashed $secondary-color;
+      border-radius: 1rem;
+    }
+
+    .tagListCard {
+      padding: 1rem;
+      width: 30%;
+      background: $primary-background !important;
+      color: $primary-color !important;
+      border: 1px dashed $secondary-color;
+      border-radius: 1rem;
+    }
+
+    .header {
+      margin-bottom: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px dashed $secondary-color;
+
+      .transactionCardHeading {
+        color: $primary-color !important;
+      }
+
+      .addTransactionBtn {
+        margin-bottom: 0.75rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        background: $secondary-color;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+      }
+    }
+
+    .transactionTable {
+      padding: 0.5rem;
+      background: $secondary-background !important;
+      border: 1px dashed $secondary-color !important;
+      border-radius: 0.5rem !important;
+    }
+
+    .myCol {
+      padding: 0.5rem 1rem !important;
+      background: $secondary-background;
+      color: $primary-color !important;
+      border: 1px dashed $secondary-color !important;
+      border-radius: 0 !important;
+
+      &::before {
+        background-color: transparent !important;
+      }
+    }
+  }
+}

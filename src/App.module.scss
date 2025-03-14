@@ -1,0 +1,12 @@
+@import "./styles/variables.scss";
+
+.wrapper {
+  margin: 0 auto;
+  width: fit-content;
+  background: $primary-background;
+}
+
+.container {
+  max-width: 100rem; // 1920
+  width: 80rem;
+}

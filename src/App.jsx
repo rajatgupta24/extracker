@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import './App.scss'
-import Home from './pages/home/Home'
+import Home from "./pages/home/Home";
+import styles from "./App.module.scss";
 
 const App = () => {
   return (
-    <Home/>
-  )
-}
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <Home />
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;
